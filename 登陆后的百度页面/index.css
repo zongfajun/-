@@ -1,0 +1,650 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 13px arial;
+    min-width: 990px;
+}
+
+header {
+    height: 38px;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 38px;
+}
+
+nav {
+    float: right;
+}
+
+nav > a {
+    padding-left: 15px;
+    font-weight: 700;
+}
+
+nav > a:link {
+    color: black;
+}
+
+.puduct {
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    background-color: #398bfb;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 38px;
+}
+
+.weather {
+    float: left;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.weather-img {
+    display: inline-block;
+    background-image: url("百度/a7.png?__sprite");
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.air {
+    color: #badc00;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+.center {
+    display: inline-block;
+}
+
+.center a {
+    padding-left: 15px;
+}
+
+/*更多产品部分*/
+.more {
+    float: right;
+    margin-left: 18px;
+    position: relative;
+}
+
+.more_prudct {
+    position: absolute;
+    list-style: none;
+    width: 100px;
+    text-align: center;
+    background-color: #f9f9f9;
+    line-height: 16px;
+    height: 720px;
+    color: #666666;
+    top: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.more_prudct > li:not(:last-child) {
+    width: 80%;
+    margin: 10px auto 5px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.more_prudct > li > span {
+    display: block;
+    margin: 5px auto 10px;
+}
+
+.more_prudct > li > p {
+    margin: 8px auto;
+}
+
+.more_prudct > li > a {
+    color: #666666;
+}
+
+/*奥运部分的轮播*/
+.content-inner-2 > img {
+    width: 560px;
+    position: absolute;
+    z-index: 0;
+    transition: all 2s;
+}
+
+.olympic_cricle {
+    list-style: none;
+    position: absolute;
+    top: 320px;
+    left: 245px;
+}
+
+.olympic_cricle > li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #CCCCCC;
+    float: left;
+    margin: 5px;
+    z-index: 10;
+}
+
+.content-inner-3 {
+    float: right;
+    width: 270px;
+    height: 312px;
+    background-color: #FFFFFF;
+    margin-right: 26px;
+    margin-top: 13px;
+}
+
+.content-inner-3 > ul {
+    list-style: none;
+    width: 270px;
+    height: 30px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-inner-3 > ul > li {
+    float: left;
+    width: 40px;
+    height: 100%;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content-inner-3 > ul > li:hover {
+    border-bottom: 2px solid #3388ff;
+}
+
+.content-inner-3 > ul > li:last-child {
+    float: right;
+    margin-right: 7px;
+    width: 52px;
+}
+
+.content-inner-3 > dl > dd {
+    width: 270px;
+    height: 83px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #dddddd;
+    margin: 10px auto;
+}
+
+.team_1 {
+    float: left;
+    width: 75px;
+    height: 100%;
+}
+
+.team_1 > img {
+    width: 45px;
+    margin-top: 10px;
+}
+
+.team_1 > p {
+    color: #333333;
+    font-size: 12px;
+}
+
+.team_2 {
+    float: right;
+}
+
+.team_time {
+    float: left;
+    width: 120px;
+    height: 100%;
+    line-height: 23px;
+    margin-top: 10px;
+}
+
+.team_time > p:nth-child(1) {
+    color: #334b4b;
+}
+
+.team_time > p:nth-child(2) > span:last-child {
+    font-weight: bold;
+}
+
+.team_time > a {
+    color: #0077ff;
+    text-decoration: none;
+}
+
+/*小说部分*/
+.content-novel {
+    display: none;
+}
+
+.content-novel > ul {
+    list-style: none;
+    margin-top: 14px;
+    margin-left: 14px;
+}
+
+.content-novel > ul > li {
+    float: left;
+    width: 270px;
+    height: 149px;
+    border-top: 1px solid #dddddd;
+    margin-left: 11px;
+    background-color: #F8F8F8;
+    margin-top: 11px;
+    box-sizing: border-box;
+    padding-top: 9px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.content-novel > ul > li > dl {
+    display: inline-block;
+    line-height: 26px;
+    text-align: left;
+    margin-left: 16px;
+    vertical-align: 22px;
+}
+
+.content-novel > ul > li > dl > dd {
+    color: #666666;
+}
+
+.content-novel > ul > li > img {
+    width: 100px;
+}
+
+.content-novel > ul > li > dl > dd:first-child {
+    font-size: 14px;
+    color: #333;
+}
+
+/*推荐部分*/
+.content-recommed{
+    display: none;
+}
+.recommed-1 {
+    float: left;
+    width: 544px;
+    height: 334px;
+    margin-left: 25px;
+}
+
+.reconmmed-top {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.reconmmed-top > span {
+    display: inline-block;
+    width: 172px;
+    height: 1px;
+    background-color: #e2e2e2;
+    vertical-align: middle;
+}
+
+.reconmmed-top > span:first-child {
+    margin-right: 193px;
+}
+
+.reconmmed-top > div {
+    margin-top: -13px;
+}
+
+.reconmmed-top > div > i {
+    background: url("百度/news_88aeb6fe.png?__sprite") no-repeat -45px -2px;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    vertical-align: -2px;
+}
+
+.reconmmed-content {
+    text-align: left;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.reconmmed-content > div {
+    float: right;
+    width: 330px;
+    margin-right: 7px;
+    margin-top: 26px;
+}
+/*实时热点部分*/
+.reconmmed-top-2{
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+.reconmmed-top-2>b{
+    font-size: 14px;
+}
+.reconmmed-top-2>div{
+    float: right;
+    margin-right: 38px;
+}
+.reconmmed-top-2>div>span{
+    background: url("百度/news_88aeb6fe.png?__sprite") no-repeat -23px -25px;
+    padding-left: 23px;
+    cursor: pointer;
+}
+.reconmmed-top-2>div>span:hover{
+    background: url("百度/news_88aeb6fe.png?__sprite") no-repeat -23px -42px;
+}
+.recommed-2{
+    float: right;
+}
+.recommed-2>ul{
+    text-align: left;
+    list-style: none;
+    display: inline-block;
+    line-height: 28px;
+    margin-right: 38px;
+}
+.recommed-2>ul>li{
+    font-size: 14px;
+    color: #333333;
+    font-family: "Microsoft YaHei";
+}
+/*切换导航部分*/
+#nav{
+    cursor: pointer;
+}
+/*设置部分*/
+.set-content{
+    position: absolute;
+    width: 896px;
+    height: 180px;
+    border: 1px solid #dddddd;
+    background-color: #FFFFFF;
+    top: 44px;
+    left: -869px;
+    z-index: 100;
+    box-shadow: 0px 0px 8px #ddd;
+    color: #666666;
+    text-align: left;
+    box-sizing: border-box;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+.take{
+    float: left;
+    width: 375px;
+    height: 130px;
+    border-bottom: 1px solid #dddddd;
+}
+.take>dl{
+    height: 74px;
+    display: inline-block;
+    width: 274px;
+    vertical-align: top;
+}
+.take>p{
+    margin-bottom: 19px;
+}
+.take>div{
+    display: inline-block;
+    width: 78px;
+    height: 24px;
+    border:1px dotted #dddddd;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 46px;
+    vertical-align: top;
+}
+.take>dl>dd{
+    display: inline-block;
+    color: #262626;
+    width: 53px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+/*底部信息*/
+.footer-word{
+    margin-top: 120px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #999999;
+    line-height: 26px;
+    position: relative;
+}
+.footer-word a{
+    color: #999999;
+}
+.baidu-logo{
+    margin: 0 auto;
+    margin-top: 8%;
+    background-image: url("百度/baidu-logo.png?__sprite");
+    width: 270px;
+    height: 120px;
+}
+article{
+    position: relative;
+    text-align: center;
+}
+.baidu-text{
+    position: relative;
+    height: 34px;
+    width: 540px;
+    margin-top: 20px;
+    outline: none;
+}
+.baidu-button{
+    height: 39px;
+    width: 105px;
+    background-color: #38f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-left: -5px;
+    vertical-align: middle;
+    outline: none;
+}
+.baidu-serch{
+    position: relative;
+    display: inline-block;
+}
+.baidu-camera{
+    position: absolute;
+    background-image: url("百度/camera_new_679c15cc.png?__sprite");
+    width: 18px;
+    height: 16px;
+    top: 30px;
+    left: 513px;
+}
+footer{
+    text-align: center;
+}
+footer>ul{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 900px ;
+    height: 44px;
+    border: 1px solid #e0e0e0;
+}
+footer>ul>li{
+    list-style: none;
+    float: left;
+    width: 100px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+}
+.nav-change{
+    background-color: #9a9da2 ;
+    color: white;
+    font-weight: 700;
+}
+.nav-icon{
+    display: inline-block;
+    background: url("百度/card_setts_fdb17359.png?__sprite") no-repeat;
+    background-position: -13px 0;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.nav-change>.nav-icon{
+    background: url("百度/card_setts_fdb17359.png?__sprite") no-repeat;
+    background-position: -140px 0;
+}
+.li-frist{
+    width: 120px;
+}
+.li-last{
+    background: url("百度/card_setts_fdb17359.png?__sprite") no-repeat;
+    background-position: -121px -49px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top:12px;
+    margin-right: 10px;
+}
+.nav-set{
+    float: right;
+    position: relative;
+}
+.content{
+    position: relative;
+    margin: 0 auto;
+    margin-top: -1px;
+    width: 900px;
+    height: 370px;
+    border: 1px solid #e0e0e0;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.content-my{
+    margin: 10px auto;
+    width:88%;
+    height: 30px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 30px;
+}
+.content-my span{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.content-my-a{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #2c3339;
+    border-bottom: 5px  solid transparent ;
+    border-top:5px solid transparent ;
+}
+.content-set{
+    float: right;
+}
+.set-icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background:url("百度/mine_set_818172e0.png?__sprite") -68px -13px no-repeat;
+    vertical-align: middle;
+}
+.content-set a{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.content-set a:hover{
+    color: #0079F5;
+}
+.content-1{
+    width: 88%;
+    height: 66px;
+    margin: 0 auto;
+}
+.content-1-web{
+    background-image: url("百度/s_nav_blank_3f358752.png?__sprite");
+    width: 327px;
+    height: 20px;
+    margin:  0 auto;
+}
+.content-follow{display: none}
+.content-Olympic{
+    display: none;
+    position: relative;
+}
+.content-inner{
+    background: url("百度/top_fad07821.png?__sprite") center bottom no-repeat;
+    background-size: 100% 100%;
+    width: 900px;
+    height: 380px;
+}
+.content-inner-1{
+    text-align: center;
+    margin-top: 20px;
+}
+.content-inner-1 img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+.content-inner-1 span{
+    font-size: 16px;
+    color: #349706;
+    margin-left: 15px;
+    font-family: "Microsoft yahei";
+}
+.content-inner-2{
+    float: left;
+    margin-top: 44px;
+    margin-left: 34px;
+}
+/*设置部分*/
+.set-window{
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px;
+    position: absolute;
+    line-height: 20px;
+    font-weight: 300;
+    font-size: 12px;
+    border: 1px solid #5d5d5d;
+    background-color: #FFFFFF;
+    min-width: 100px;
+    cursor: pointer;
+    left: 0;
+    top: 19px;
+    z-index: 10;
+    display: none;
+}
+nav >a{
+    position: relative;
+    cursor: pointer;
+}
+#return{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #5d5d5d;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 10px;
+    right: 20%;
+    line-height: 50px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+#return>i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+    transform: rotate(45deg);
+}
